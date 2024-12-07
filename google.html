@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+    <style>
+        /* Basic styles */
+        body {
+            font-family: monospace;
+            margin: 0;
+            padding: 0;
+            background-color: whitesmoke;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #aeb6bf ;
+        }
+        .nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav a:hover {
+            border-bottom: solid 3px darkblue;
+        }
+        section {
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .skill, .project {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33% - 20px);
+            text-align: center;
+        }
+        .html:hover{
+            box-shadow: 2px 3px 4px lightblue;
+            transition: 1s;
+
+        }
+        .css:hover{
+            box-shadow: 2px 3px 4px lightblue;
+            transition: 1s;
+
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        img:hover{
+
+            transition: 1s;
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AKRITI TAMRAKAR</h1>
+        <p>Member at GDG on campus</p>
+    </header>
+
+    <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2 style="font-size:25px;">About Me</h2>
+            <div class="img-class" style="text-align: ; margin-bottom: 20px;">
+    <img src="image/akriti.png" alt="Profile-pic" style="width: 200px; height: 200px; border-radius: 4px; border: 3px solid #333;">  <h1>Hello! I'm Akriti Tamrakar, a passionate web developer with experience in creating interactive and dynamic websites. I specialize in front-end technologies like HTML, CSS, and JavaScript, and I am always eager to learn new skills to improve my craft.</h1>
+</div>
+
+
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="html">
+                    <h3>HTML</h3>
+                    <p>Creating semantic and well-structured content for the web.</p>
+                </div>
+                <div class="css">
+                    <h3>CSS</h3>
+                    <p>Styling websites with modern design techniques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>Style Table</p>
+                    <a href="https://showcase.shubhkamnainstitute.com/post/programming/612/stylish-table-2/">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p>Nav Bar</p>
+                    <a href="https://showcase.shubhkamnainstitute.com/post/web-development/906/sidebar-2/">View Project</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to get in touch with me through the following:</p>
+            <ul>
+                <li>Email: akritit009@gmail.com</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/akriti-tamrakar-a335a8328/" target="_blank">Your LinkedIn</a></li>
+                <li>GitHub: <a href="https://github.com/akriti-1703" target="_blank">Your GitHub</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
