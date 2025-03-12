@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FORMS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            background-color: steelblue; /* Background color for the form container */
+            padding: 20px;
+            border-radius: 8px;
+            width: 60%;
+            margin: auto;
+            color: white; /* Text color within the form for better contrast */
+        }
+
+        
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 100%;
+            background-color: white; /* Background color for the table */
+            color: black; /* Text color within the table for better readability */
+        }
+        td {
+            padding: 8px;
+        }
+        center {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<center><h2>FORMS IN HTML</h2></center>
+<hr>
+<div class="form-container">
+    <form action="home.php" method="post" enctype="multipart/form-data">
+        <table border="1" cellspacing="1">
+            <tr>
+                <td><label for="fname">First name:</label></td>
+                <td><input type="text" id="fname" name="fname" required placeholder="Enter your first name"></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last name:</label></td>
+                <td><input type="text" id="lname" name="lname" required></td>
+            </tr>
+            <tr>
+                <td><label for="pnumber">Phone number:</label></td>
+                <td><input type="tel" id="pnumber" name="pnumber" required placeholder="Enter your phone number"></td>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                </td>
+                <td>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="height">Height:</label></td>
+                <td><input type="range" id="height" name="height" min="0" max="200" step="1"></td>
+            </tr>
+            <tr>
+                <td><label for="file">File Upload:</label></td>
+                <td><input type="file" id="file" name="filetype" accept="image/*,application/pdf"></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth:</label></td>
+                <td><input type="date" id="dob" name="dob"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><input type="text" id="address" name="address"></td>
+            </tr>
+        </table>
+        <br>
+        <center>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </center>
+    </form>
+</div>
+
+</body>
+</html>
